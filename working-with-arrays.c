@@ -34,17 +34,15 @@ int main() {
     */
 
    // 5 element int array
-    int *my_array = malloc( sizeof(int) * 5 );
+    char *my_array = malloc( sizeof(char) * 5 );
 
-    
-    
     int i;
     for(i = 0; i < 5; ++i) {
-        printf("%d: %d\n", i, my_array[i]);
+        printf("%d: %c\n", i, my_array[i]);
     }
 
-    my_array[1] = 5476;
-    my_array[4] = 1109;
+    my_array[1] = 1234;
+    my_array[4] = 5678;
 
     for(i = 0; i < 5; ++i) {
         printf("%d: %d\n", i, my_array[i]);
